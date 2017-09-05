@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<hr>
+{% assign cards = site.data.cards.first %}
+{% include card.html %}
+
+<hr><span>smarter:</span>
+{% include cards-smart.html  title=site.data.cards.first.title
+                      url=site.data.cards.first.url %}
+                      
+
+<hr><span>possible?</span>
+{% include cards-smart.html  title="jonas"
+                      url="homepage" %}
