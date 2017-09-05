@@ -2,6 +2,12 @@
 layout: default
 ---
 <hr>
-
 {% include item.html  title=site.data.items.first.title
-                      page=site.data.items.first.page %}
+    page=site.data.items.first.page %}
+
+<hr>
+{% for item in site.data.items %}
+    {% include item.html  title=item.title
+                          page=item.page %}
+{% endfor %}
+
